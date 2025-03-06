@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import styles from "@/components/nav.module.css"; // ใช้ CSS Module และเปลี่ยนชื่อตัวแปรเป็น styles
 
-function nav() { // ปรับชื่อเป็นตัวใหญ่ตาม convention
+function Nav() { // ปรับชื่อเป็นตัวใหญ่ตาม convention
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
@@ -32,4 +32,4 @@ function nav() { // ปรับชื่อเป็นตัวใหญ่ต
   );
 }
 
-export default nav;
+export default Nav;
