@@ -1,0 +1,101 @@
+/* ProjectSection.css */
+.project-section {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+  }
+  
+  .project-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .project-card {
+    width: 400px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    overflow: hidden;
+  }
+  
+  .card-image img {
+    width: 400px;
+    height: 270px;
+    object-fit: cover;
+  }
+  
+  .card-content {
+    height: 200px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .card-content h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  .province {
+    color: #666;
+    font-size: 0.9rem;
+    margin: 5px 0;
+  }
+  
+  .description {
+    font-size: 0.9rem;
+    color: #444;
+    margin: 5px 0;
+  }
+  
+  .progress-info {
+    margin: 5px 0;
+  }
+  
+  .funding-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+  }
+  
+  .progress-bar {
+    width: 100%;
+    height: 10px;
+    background: #f0f0f0;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 5px;
+  }
+  
+  .progress-fill {
+    height: 100%;
+    background: #4CAF50;
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .donate-button {
+    display: block;
+    width: 120px;
+    margin: 10px auto 0;
+    padding: 8px 0;
+    background: #2196F3;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .donate-button:hover {
+    background: #1976D2;
+  }

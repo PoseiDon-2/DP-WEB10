@@ -1,0 +1,147 @@
+/* src/components/nav.module.css */
+@import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@100..700&family=Noto+Sans+Thai:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+.navbar {
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: #ffffff;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    font-family: "Noto Sans Thai", sans-serif;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    transition: color 0.3s;
+}
+
+.menu li a:hover {
+    color: #facc15;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.login, .register {
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login {
+    border: 1px solid #929292;
+    background-color: white;
+    color: #1e40af;
+}
+
+.login:hover {
+    background-color: #e5e7eb;
+}
+
+.register {
+    background-color: #ffa332;
+    color: black;
+}
+
+.register:hover {
+    background-color: #e08844;
+}
+
+.hamburger {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .navbar {
+        padding: 12px;
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+
+    .menu {
+        gap: 20px;
+    }
+
+    .login, .register {
+        padding: 6px 12px;
+    }
+}
+
+@media (max-width: 767px) {
+    .navbar {
+        flex-wrap: wrap;
+        position: relative;
+        padding: 10px;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #ffffff;
+        padding: 10px 0;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        z-index: 10;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .menu li {
+        padding: 10px 20px;
+    }
+
+    .menu li a {
+        display: block;
+    }
+
+    .auth-buttons {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 10px 20px;
+        position: absolute;
+        top: calc(100% + 120px);
+        left: 0;
+        background-color: #ffffff;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        z-index: 10;
+    }
+
+    .login, .register {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
